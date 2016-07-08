@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>      
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="col-md-12 logo">Logo</div>
+        <div class="col-md-12">
+            <div class="col-md-3 toc">
+                <div class="col-md-12 tocVal" id="dashboard">
+                    <span>Dashboard</span>
+                </div>
+                <div class="col-md-12 tocVal" id="contact">
+                    <span>Contacts</span>
+                </div>
+            </div>
+            <div class="col-md-9" id="content">
+                <div class="header col-md-12">Contact List</div>
+                <div class="col-md-12">
+                        <button class="btn btn-success btn-lg" id="addContact">Add Contact</button>
+                    </div>
+                <div  id="contactTable">
+                    <div class="col-md-12">
+                        <div class="col-md-9">
+                            <div class="col-md-3">Quick Find Contacts</div>
+                            <form class="col-md-9 bd-search hidden-sm-down">
+                                <input type="text" class="form-control" id="search_input" placeholder="Search..." autocomplete="off" />
+                                <div class="dropdown-menu bd-search-results" id="search-results"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12" id="tableWrapper">
+                    </div>
+                </div>
+                <div class="header col-md-12">Contact Form</div>
+                <div class="col-md-8 hide" id="formPage">
+                    <div class="form-group row">
+                        <label for="fname" class="col-md-3 form-control-label">First Name: </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="fname" placeholder="Anoop" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lname" class="col-md-3 form-control-label">Last Name: </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="lname" placeholder="Kumar" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="form-control-label col-md-11">Email: </label>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
+                        +
+                    </button>
+                    <div class="form-group row collapseEmail collapse" id="collapseWEmail">
+                        <label for="wemail" class="col-md-3 form-control-label">Work: </label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="wemail" placeholder="an@gmai.com" />
+                        </div>
+                    </div>
+                    <div class="form-group row collapseEmail collapse" id="collapsePEmail">
+                        <label for="pemail" class="col-md-3 form-control-label">Personal: </label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="pemail" placeholder="ano@gmail.com"/>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="form-control-label col-md-11">Phone No.: </label>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".collapsePhone" aria-expanded="false" aria-controls="collapsePhone">
+                        +
+                    </button>
+                    <div class="form-group row collapsePhone collapse" id="collapseWContact">
+                        <label for="wcontact" class="col-md-3 form-control-label">Work: </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="wcontact" />
+                        </div>
+                    </div>
+                    <div class="form-group row collapsePhone collapse" id="collapsePContact">
+                        <label for="pcontact" class="col-md-3 form-control-label">Personal: </label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="pcontact" />
+                        </div>
+                    </div>
+                    </div>
+                    <button id='savebtn' class="btn btn-primary">Save</button>
+                    <button id='cancelbtn' class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    <button id="loadTable" class="btn btn-primary">load table</button>
+    </body>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/main.min.js"></script>
+    <script>
+        
+    </script>
+</html>

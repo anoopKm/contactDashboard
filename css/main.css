@@ -1,0 +1,46 @@
+html {
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.logo {
+    font-family: monospace;
+    background-color: #8c99a6;
+    text-align: left;
+    margin-bottom: 15px;
+    height: 50px;
+}
+.toc {
+    height: 718px;
+    background-color: #8B4513;
+    color: white;
+}
+.container > img {
+    margin: 40px auto;
+}
+
+#collapseWEmail, #collapsePEmail, #collapseWContact, #collapsePContact{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+#tableWrapper > .col-md-12 > .col-md-3, #tableWrapper > .col-md-12 > .col-md-4, #tableWrapper > .col-md-12 > .col-md-1, #tableWrapper > .col-md-12{
+    outline: 1px solid #000;
+}
+#addContact{
+    float: right;
+}
+.tocVal > span{
+    text-decoration: none;
+    font-size: 15px;
+}
+.tocVal{
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
